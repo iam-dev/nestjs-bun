@@ -1,0 +1,8 @@
+services:
+  api:
+    image: docker.iam-dev/nestjs-bun:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - ${APP_PORT}:${APP_PORT}
